@@ -2,11 +2,11 @@
 1. What is a Computer Program?
 2. Problem Solving
 3. The C++ Programming Language
-    - Comments
 4. Pervasiveness of C++
 5. Why choose C++
 6. Brief History of C++
 7. Example C++ Program (Hello world)
+    - Comments
 8. Setup and Installation
     - What you need to get started with C++, and where you can get it
 9. C++ Editors
@@ -20,16 +20,21 @@
 
 
 # Section ___ : Variables and Data Types
-1. Data Types
-2. Choosing Data Types
+1. Identifiers
+2. Reserved words
+3. Data Types
+4. Choosing Data Types
 
-3. Variables
-4. Assignment of statements
-5. Arithmetic Expressions (Operators)
-6. Precedence and nesting parentheses
-7. Initialization of variables
-8. Expressions with mixed variable types (Type Casting)
-9. Declaration an Initialization of symbolic constants
+5. Variables
+6. Naming conventions
+7. Assignment of statements
+
+8. Arithmetic Expressions (Operators)
+9. Precedence and nesting parentheses
+
+10. Initialization of variables
+11. Expressions with mixed variable types (Type Casting)
+12. Declaration an Initialization of symbolic constants
 
 ### Example
 1. Programming as a Problem Solving Process
@@ -67,6 +72,7 @@
 5. Function call and execution
 6. Function arguments
 7. Passing by value or reference
+8. Recursion - just to fuck with you
 
 
 
@@ -114,7 +120,7 @@
 
 
 # Section ___ : Advanced C++
-1. Templates
+1. Templates (Generics)
 2. Pre-processor
 3. Exception Handling
 4. Files and Streams
@@ -127,6 +133,26 @@
 
 # Section ___ : Debugging and Testing
 1. Valgrind
+2. Unit Testing
+
+
+
+# Section ___ : Builds and Integration
+## Build Tools
+1. Make
+2. Build Tools
+3. Unit Testing
+4. Packaging and Installation
+
+## Version Control
+1. Basic Concepts
+2. Commits
+3. Branches
+4. Merging
+5. Continuous Integration
+6. Integration and Testing
+7. Test Code and Build Integration
+
 
 
 
@@ -142,13 +168,8 @@
 
 # THINGS TO ADD #
 ## Sections ##
-- Object Oriented Coding (section)
-    - Separation of concerns
-- Version control with Git
 - Pointers and memory
-- Recursion
 - Memory
-- Sorting
 
 
 
