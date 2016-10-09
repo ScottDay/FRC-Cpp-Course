@@ -2,40 +2,41 @@
 1. What is a Computer Program?
 2. Problem Solving
 3. The C++ Programming Language
-4. History of C++
-5. C++ Program Structure (Hello world)
+4. Pervasiveness of C++
+5. Why choose C++
+6. Brief History of C++
+7. Example C++ Program (Hello world)
 
-6. C++ Fundamentals
-7. C++ Code Formatting
-8. C++ Statements
-
-
-
-# Section 2: Editing, Compiling & Executing a Program
-1. Setup and Installation
-2. C++ Editors
-
-3. Programming as a Problem Solving Process
-4. A simple C++ program to add two numbers
-
-5. Compiling and Executing
+8. Setup and Installation (What you need to get started with C++, and where you can get it)
+9. C++ Editors
 
 
 
-# Section 3: Basics
-## Data Types
-1. Available Data Types
-2. Numeric Data Types
-3. Character Data Types
-4. Other Data Types
-5. Choosing Data Types
+# Section 2: Variables and Data Types
+1. Data Types
+2. Choosing Data Types
 
-## Assignment of Variables
-1. Variables
-2. Constants
-3. Type Conversions
+3. Variables
+4. Constants
+5. Type Conversions
 
-## Control Statements
+### Example
+1. Programming as a Problem Solving Process
+2. A simple C++ program to add two numbers
+3. Compiling and Executing
+
+
+
+# Section 3: Data Structures
+1. Arrays
+2. C++ Strings
+3. Structures
+4. Unions
+5. Enumerations
+
+
+
+# Section 4: Conditional Statements
 1. C++ Operators
 
 ### Selection Control Structures
@@ -51,15 +52,9 @@
 4. FOR repetition control statement
 5. Nesting loops
 
-## Data Structures
-1. Complex Data Types
-2. Arrays
-3. C++ Strings
-4. Structures
-5. Unions
-6. Enumerations
 
-## Functions
+
+# Section 4: Functions
 1. Function definition
 2. Example of function definition, declaration and call
 3. Function header and body
@@ -70,8 +65,10 @@
 
 
 
-# Section 4: Object Orientated
+# Section 5: Object Orientated
 1. Classes & Objects
+    - Class Syntax
+    - Member Function Definitions
 2. Inheritance
 3. Overloading
 4. Polymorphism
@@ -81,7 +78,7 @@
 
 
 
-# Section 5: Advanced
+# Section 6: Advanced
 1. Namespaces
 2. Templates
 3. Pre-processor
@@ -90,11 +87,12 @@
 
 
 
-# Section 6: Patterns
+# Section 7: UML
 
 
 
-# Homework
+# Section 8: Patterns
+
 
 
 
@@ -106,8 +104,6 @@
 
 # THINGS TO ADD #
 ## Sections ##
-- Makefiles
-- Shell scripting
 - Containers
     - Arrays (in depth)
     - Stacks and Queues
@@ -118,14 +114,33 @@
     - Heaps
 - Object Oriented Coding (section)
     - Separation of concerns
-- UML
 - Version control with Git
 - Pointers and memory
 - Recursion
 - Debugging and testing
--
+    - Valgrind
+- Memory
 
 ## Topics ##
 - Comments
 - User IO
 - Libraries
+
+
+
+
+
+
+
+# Section ___ : Basics
+## Revision
+## Functions
+## Expressions
+## C++ Programs (Structure)
+
+# Section ___ : Environments
+## Header Files
+## Compiling
+## The Preprocessor
+## Access
+## Make
