@@ -2,6 +2,7 @@
 1. What is a Computer Program?
 2. Problem Solving
 3. The C++ Programming Language
+    - Comments
 4. Pervasiveness of C++
 5. Why choose C++
 6. Brief History of C++
@@ -9,6 +10,12 @@
 8. Setup and Installation
     - What you need to get started with C++, and where you can get it
 9. C++ Editors
+
+
+
+# Section ___ : Simple Input & Output
+1. Printing to terminal
+2. Input of data from keyboard
 
 
 
@@ -28,33 +35,6 @@
 1. Programming as a Problem Solving Process
 2. A simple C++ program to add two numbers
 3. Compiling and Executing
-
-
-
-# Section ___ : Simple Input & Output
-1. Printing to terminal
-2. Input of data from keyboard
-
-
-
-# Section ___ : Data Structures
-## Composite Datatype
-1. Structures
-2. Unions
-3. Enumerations
-
-## Data Structures
-1. Arrays
-    - C++ Strings
-    - Stacks and Queues
-2. Hash Tables
-3. Lists
-4. Trees
-
-## Containers
-1. Lists
-2. Sets
-3. Maps
 
 
 
@@ -90,10 +70,40 @@
 
 
 
+# Section ___ : Environments
+## Header Files
+## Compiling
+## The Preprocessor
+## Access
+## Make
+
+
+
+# Section ___ : Data Structures
+## Composite Datatype
+1. Structures
+2. Unions
+3. Enumerations
+
+## Data Structures
+1. Arrays
+2. Stacks and Queues
+3. Hash Tables
+4. Lists
+5. Trees
+
+## Containers
+1. Lists
+2. Sets
+3. Maps
+
+
+
 # Section ___ : Object Orientated
 1. Classes & Objects
     - Class Syntax
     - Member Function Definitions
+    - Namespaces
 2. Inheritance
 3. Overloading
 4. Polymorphism
@@ -103,12 +113,11 @@
 
 
 
-# Section ___ : Advanced
-1. Namespaces
-2. Templates
-3. Pre-processor
-4. Exception Handling
-5. Files and Streams
+# Section ___ : Advanced C++
+1. Templates
+2. Pre-processor
+3. Exception Handling
+4. Files and Streams
 
 
 
@@ -116,7 +125,11 @@
 
 
 
-# Section __ : Patterns
+# Section ___ : Debugging and Testing
+1. Valgrind
+
+
+
 
 
 
@@ -134,30 +147,13 @@
 - Version control with Git
 - Pointers and memory
 - Recursion
-- Debugging and testing
-    - Valgrind
 - Memory
 - Sorting
 
-## Topics ##
-- Comments
-- Libraries
 
 
-
-
-
-
-
-# Section ___ : Basics
-## Revision
-## Functions
-## Expressions
-## C++ Programs (Structure)
-
-# Section ___ : Environments
-## Header Files
-## Compiling
-## The Preprocessor
-## Access
-## Make
+# Section __ : Patterns
+1. What are Patterns
+2. Strategy Pattern
+3. Template pattern
+3. Factory Pattern

@@ -1,6 +1,9 @@
 # FRC-Cpp-Course
 A basic introduction to C++ intended for Curtin FRC teams
 
+## Requirements
+You can use any C++ IDE/editor and compiler to follow this course.
+
 ## Intentions
 The decisions made in creating this course were made for a particular purpose. It is here that these decisions are elucidated for the good of the instructor. If the instructor understands the intent of the course, then he/she will be better suited to conduct the course.
 
@@ -16,7 +19,7 @@ The main goals of the course are to:
 In this course you will develop a general knowledge and understanding of software design and problem solving, as well as the basics of embedded programming, autonomous robot programming, computer communications, version control, testing and debugging.
 
 ## Audience
-This course is primarily intended for students taking part in FRC, but can be applied to learners at a high-school level and above who are interested in computer science.
+This course is primarily intended for students taking part in FRC, but can be applied to learners at a high-school level and above who are interested in computer science and are willing to learn.
 
 ## Materials, Resources and Preparation
 
@@ -32,4 +35,4 @@ This course is primarily intended for students taking part in FRC, but can be ap
 
 
 ### Beyond the Lesson
-Massive Open Online Courses
+Massive Open Online Courses (MOOC)
