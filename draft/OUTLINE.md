@@ -1,4 +1,4 @@
-# Section 1: Getting Started
+# Section ___ : Getting Started
 1. What is a Computer Program?
 2. Problem Solving
 3. The C++ Programming Language
@@ -6,19 +6,23 @@
 5. Why choose C++
 6. Brief History of C++
 7. Example C++ Program (Hello world)
-
-8. Setup and Installation (What you need to get started with C++, and where you can get it)
+8. Setup and Installation
+    - What you need to get started with C++, and where you can get it
 9. C++ Editors
 
 
 
-# Section 2: Variables and Data Types
+# Section ___ : Variables and Data Types
 1. Data Types
 2. Choosing Data Types
 
 3. Variables
-4. Constants
-5. Type Conversions
+4. Assignment of statements
+5. Arithmetic Expressions (Operators)
+6. Precedence and nesting parentheses
+7. Initialization of variables
+8. Expressions with mixed variable types (Type Casting)
+9. Declaration an Initialization of symbolic constants
 
 ### Example
 1. Programming as a Problem Solving Process
@@ -27,34 +31,55 @@
 
 
 
-# Section 3: Data Structures
+# Section ___ : Simple Input & Output
+1. Printing to terminal
+2. Input of data from keyboard
+
+
+
+# Section ___ : Data Structures
+## Composite Datatype
+1. Structures
+2. Unions
+3. Enumerations
+
+## Data Structures
 1. Arrays
-2. C++ Strings
-3. Structures
-4. Unions
-5. Enumerations
+    - C++ Strings
+    - Stacks and Queues
+2. Hash Tables
+3. Lists
+4. Trees
+
+## Containers
+1. Lists
+2. Sets
+3. Maps
 
 
 
-# Section 4: Conditional Statements
-1. C++ Operators
+# Section ___ : Conditional Statements
+1. Boolean expressions and relational operators
+2. Compound Boolean expressions using logical operators
 
 ### Selection Control Structures
 1. IF selection control statement
 2. IF-ELSE selection control statement
 3. ELSE-IF multiple selection statement
+4. Nested IF statements
+5. SWITCH multiple selection statement
 
 ### Looping Control Structures
-1. SWITCH multiple selection statement
-2. WHILE loops
-3. DO-WHILE loops
-3. Increment and decrement control statement
+1. WHILE loops
+2. DO-WHILE loops
+3. Increment and decrement operators
 4. FOR repetition control statement
 5. Nesting loops
+6. Choosing control structures
 
 
 
-# Section 4: Functions
+# Section ___ : Functions
 1. Function definition
 2. Example of function definition, declaration and call
 3. Function header and body
@@ -65,7 +90,7 @@
 
 
 
-# Section 5: Object Orientated
+# Section ___ : Object Orientated
 1. Classes & Objects
     - Class Syntax
     - Member Function Definitions
@@ -78,7 +103,7 @@
 
 
 
-# Section 6: Advanced
+# Section ___ : Advanced
 1. Namespaces
 2. Templates
 3. Pre-processor
@@ -87,11 +112,11 @@
 
 
 
-# Section 7: UML
+# Section ___ : UML
 
 
 
-# Section 8: Patterns
+# Section __ : Patterns
 
 
 
@@ -104,14 +129,6 @@
 
 # THINGS TO ADD #
 ## Sections ##
-- Containers
-    - Arrays (in depth)
-    - Stacks and Queues
-    - Hash Tables
-    - Sorting
-    - Lists
-    - Trees
-    - Heaps
 - Object Oriented Coding (section)
     - Separation of concerns
 - Version control with Git
@@ -120,10 +137,10 @@
 - Debugging and testing
     - Valgrind
 - Memory
+- Sorting
 
 ## Topics ##
 - Comments
-- User IO
 - Libraries
 
 
