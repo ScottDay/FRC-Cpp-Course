@@ -1,4 +1,4 @@
-# Section ___ : Getting Started
+# Section ___ : Introduction
 1. What is a Computer Program?
 2. Problem Solving
 3. The C++ Programming Language
@@ -121,9 +121,8 @@
 
 # Section ___ : Advanced C++
 1. Templates (Generics)
-2. Pre-processor
-3. Exception Handling
-4. Files and Streams
+2. Exception Handling
+2. Files and Streams
 
 
 
