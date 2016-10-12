@@ -1,21 +1,23 @@
 # Section ___ : Introduction
+## Programming
 1. What is a Computer Program?
 2. Problem Solving
-3. The C++ Programming Language
-4. Pervasiveness of C++
-5. Why choose C++
-6. Brief History of C++
-7. Example C++ Program (Hello world)
-    - Comments
-8. Setup and Installation
+3. Example
+## C++
+4. The C++ Programming Language
+5. Pervasiveness of C++
+6. Why choose C++
+7. Brief History of C++
+8. Example C++ Program (Hello world)
+## Environment Setup
+9. Setup and Installation
     - What you need to get started with C++, and where you can get it
-9. C++ Editors
-
-
-
-# Section ___ : Simple Input & Output
-1. Printing to terminal
-2. Input of data from keyboard
+10. C++ Editors
+11. Compiling
+## Editing, Compiling, and Execution
+12. A Simple Program to Add Two numbers
+13. Program Structure and Syntax
+14. Development Environment & Development Cycle
 
 
 
