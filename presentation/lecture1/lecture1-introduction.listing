@@ -1,0 +1,15 @@
+// Program to add two integers typed by user at keyboard
+#include <iostream>
+using namespae std;
+
+int main()
+{
+    int num1, num2, total;
+
+    cout << "Enter integers to be added:" << endl;
+    cin >> num1 >> num2;
+    total = num1 + num2;
+    cout << "The sum is " << total << endl;
+
+    return 0;
+}

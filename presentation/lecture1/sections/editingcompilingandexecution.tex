@@ -9,32 +9,32 @@
 \begin{frame}[fragile]{A Simple Program to Add Two Numbers}
     The following is an example of a simple program written in C++.
     % Animate this, first slide to guess what it does, second explains.
-    The progam is designed to read two numbers typed by a user at the keyboard;
+    The program is designed to read two numbers typed by a user at the keyboard;
     compute their sum and display the result on the screen.
-    \begin{cppcode}
-        // Program to add two integers typed by user at keyboard
-        #include <iostream>
-        using namespace std;
+\begin{cppcode}
+// Program to add two integers typed by user at keyboard
+#include <iostream>
+using namespae std;
 
-        int main()
-        {
-           int a, b, total;
-
-           cout << "Enter integers to be added:" << endl;
-           cin >> a >> b;
-           total = a + b;
-           cout << "The sum is " << total << endl;
-
-           return 0;
-        }
-    \end{cppcode}
+int main()
+{
+    int num1, num2, total;
+    
+    cout << "Enter integers to be added:" << endl;
+    cin >> num1 >> num2;
+    total = num1 + num2;
+    cout << "The sum is " << total << endl;
+    
+    return 0;
+}
+\end{cppcode}
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Program Structure and Syntax}
     C++ uses notation that may appear strange to non-programmers (and me).
-    The notation is part of the programming language \textt{syntax}.
+    The notation is part of the programming language \texttt{syntax}.
     \begin{description}
         \item [Syntax] Formal rules that specify the structure of a legal program.
     \end{description}
@@ -53,92 +53,94 @@
 \begin{frame}[fragile]{Program Structure and Syntax}
     Every C++ program consists of a header and a main body and has the following
     structure:
-    \begin{cppcode}
-        // Comment statements which are ignored by computer; just for the reader.
-        /* Also a comment */
-        #include < header file name >
+%   \begin{minted}[linenos=true]{c++}
+%   \end{minted}
+\begin{cppcode}
+// Comment statements which are ignored by computer
+/* Also a comment */
+#include < header file name >
 
-        int main()
-        {
-            declaration of variables;
-            statements;
+int main()
+{
+    declaration of variables;
+    statements;
 
-            return 0;
-        }
-    \end{cppcode}
+    return 0;
+}
+\end{cppcode}
 \end{frame}
 
 \begin{frame}[fragile]{Program Structure and Syntax}
-    \begin{cppcode}
-        // Program to add two integers typed by user at keyboard
-        #include <iostream>
-        using namespae std;
+\begin{cppcode}
+// Program to add two integers typed by user at keyboard
+#include <iostream>
+using namespae std;
 
-        int main()
-        {
-            int num1, num2, total;
-
-            cout << "Enter integers to be added:" << endl;
-            cin >> num1 >> num2;
-            total = num1 + num2;
-            cout << "The sum is " << total << endl;
-
-            return 0;
-        }
-    \end{cppcode}
-    \onslide<1>
+int main()
+{
+    int num1, num2, total;
+    
+    cout << "Enter integers to be added:" << endl;
+    cin >> num1 >> num2;
+    total = num1 + num2;
+    cout << "The sum is " << total << endl;
+    
+    return 0;
+}
+\end{cppcode}
+    \only<1>
     {
         Line 1
         \begin{itemize}
             \item Lines beginning with // indicate that the rest of the line
-            is a \bold{comment}.
+            is a \textbf{comment}.
             \item Comments are inserted by programmers to help people read
             and understand the program.
             \item Can be placed anywhere in a program.
         \end{itemize}
     }
-    \onslide<2>
+    \only<2>
     {
         Line 2
         \begin{itemize}
             \item Lines beginning with \# are instructions to the compiler's
             preprocessor.
-            \item The \bold{include} instruction says "what follows is a file name,
+            \item The \textbf{include} instruction says "what follows is a file name,
             find that file and insert its contents right here".
             \item Here the file iostream contains the definitions of
-            \bold{cin}, \bold{cout}.
+            \textbf{cin}, \textbf{cout}.
         \end{itemize}
     }
-    \onslide<3>
+    \only<3>
     {
         Line 3
         \begin{itemize}
-            \item Specifies that names used in the program (ie. \bold{cin} and
-            \bold{cout}) are defined in the standard libraries.
+            \item Specifies that names used in the program (ie. \textbf{cin} and
+            \textbf{cout}) are defined in the standard libraries.
             \item This is used to avoid problems with other libraries which may
             also use these names.
         \end{itemize}
     }
-    \onslide<3>
+    \only<3>
     {
         Line 5
         \begin{itemize}
             \item When the program is executed the instructions will be executed
             in the oder they appear in the main body of the program.
-            \item The main body is delimited by main() and the curly braces
+            \item The main body is delimited by main() and the curly braces \{ \}
         \end{itemize}
     }
-    \onslide<3>
+    \only<3>
     {
         Line 6
         \begin{itemize}
-            \item
+            \item Thing
         \end{itemize}
     }
-    \onslide<3>
+    \only<3>
     {
         \begin{itemize}
-            \item
+            \item Thing
         \end{itemize}
     }
 \end{frame}

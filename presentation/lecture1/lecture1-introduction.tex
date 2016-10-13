@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[9pt]{beamer}
 
 \usetheme[progressbar=frametitle]{metropolis}
 
@@ -9,7 +9,10 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \usepackage{subfiles}
+\usepackage{tikz}
 
+% http://tex.stackexchange.com/questions/196886/reading-code-from-external-file-in-tcolorbox-and-getting-pdflatex-paragraph-e
+\usepackage{minted}
 \usepackage{tcolorbox}
 \tcbuselibrary{minted,skins}
 
@@ -18,14 +21,30 @@
     colback=cppcodebg,
     colframe=black!70,
     listing only,
+    size=tight,
     minted style=colorful,
     minted language=cpp,
-    minted options={linenos=true,numbersep=3mm,texcl=true,#1},
-    left=5mm,enhanced,
+    minted options={breaklines=true,fontsize=\small,tabsize=2,linenos=true,numbersep=2mm,texcl=true,#1},
+    left=5mm,
+    enhanced,
     overlay={\begin{tcbclipinterior}\fill[black!25] (frame.south west)
             rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
 }
 \definecolor{cppcodebg}{rgb}{0.85,0.85,0.85}
+
+
+%\newtcblisting{commandshell}{
+%    colback=black,
+%    colupper=white,
+%    colframe=yellow!75!black,
+%    listing only,
+%    listing options={style=tcblatex,language=sh},
+%    every listing line={\textcolor{red}{\small\ttfamily\bfseries root \$>}}
+%}
+
+%\begin{commandshell}
+%    Hello World!
+%\end{commandshell}
 
 % -------------------------------------------------------------------
 % Title
