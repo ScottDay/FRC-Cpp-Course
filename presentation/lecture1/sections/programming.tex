@@ -6,6 +6,7 @@
 
 % -------------------------------------------------------------------
 
+% Fix this into definitions with pauses
 \begin{frame}[fragile]{What is a Computer Program?}
     A computer program is a collection of instructions that performs a specific
     task when executed by a computer. A computer requires programs to function,
@@ -21,14 +22,14 @@
 \begin{frame}[fragile]{Problem Solving}
     Recipe to writing programs:
     \begin{enumerate}
-        \item Understand the problem.
-        \item Think of a solution.
+        \item Understand the problem. \pause
+        \item Think of a solution. \pause
         \item Describe the solution in as much detail as possible. \newline
-              You may use diagrams or plain English to do this.
-        \item Translate your solution into a program.
-        \item Run your program and see if it works.
+              You may use diagrams or plain English to do this. \pause
+        \item Translate your solution into a program. \pause
+        \item Run your program and see if it works. \pause
         \begin{itemize}
-            \item Yes? Hurray! Victory!
+            \item Yes? Hurray! Victory! \pause
             \item No? Go back to 1
         \end{itemize}
     \end{enumerate}
@@ -37,7 +38,7 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Example}
-    Think like a computer! \\~\\
+    Think like a computer! \newline
 
     What steps do you need to take to draw a smiley face?
 \end{frame}
@@ -51,6 +52,36 @@
             \draw[line width=1mm,red] (215:5mm) arc (215:325:5mm);
         \end{tikzpicture}
     \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Example Code Appreciation}
+    Lets just take a minute to appreciate what it took to make that smiley face
+    \begin{columns}[T,onlytextwidth]
+        \column{0.5\textwidth}
+            \begin{center}
+                \begin{tikzpicture}
+                    \path[fill=yellow,draw=yellow!75!red] (0,0) circle (1cm);
+                    \fill[red] (45:5mm) circle (1mm);
+                    \fill[red] (135:5mm) circle (1mm);
+                    \draw[line width=1mm,red] (215:5mm) arc (215:325:5mm);
+                \end{tikzpicture}
+            \end{center}
+        \column{0.5\textwidth}
+\begin{cppcode}
+\begin{center}
+\begin{tikzpicture}
+\path[fill=yellow,
+        draw=yellow!75!red]
+        (0,0) circle (1cm);
+\fill[red] (45:5mm) circle (1mm);
+\fill[red] (135:5mm) circle (1mm);
+\draw[line width=1mm,red] (215:5mm) arc (215:325:5mm);
+\end{tikzpicture}
+\end{center}
+\end{cppcode}
+    \end{columns}
+    And act like it totally didn't take me like ... ~2 hours to figure out how
+    to do it.
 \end{frame}
 
 % -------------------------------------------------------------------

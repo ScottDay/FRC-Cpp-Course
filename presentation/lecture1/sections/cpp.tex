@@ -43,9 +43,16 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Example C++ Program (Hello World)}
-    \inputminted[linenos=true]{c++}{code/helloworld.cpp}
-    Output:
-    Hello World!
+\begin{cppcode}[]
+#include <iostream>
+
+int main()
+{
+    cout << "Hello World!";
+    return 0;
+}
+\end{cppcode}
+    Output: Hello World!
 \end{frame}
 
 % -------------------------------------------------------------------
