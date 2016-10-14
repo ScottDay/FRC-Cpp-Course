@@ -11,22 +11,14 @@
 \usetheme[progressbar=frametitle]{metropolis}
 
 \usepackage{booktabs}
+\usepackage{hyperref}
 % \usepackage[scale=2]{ccicons}
-
 \usepackage{xspace}
-\newcommand{\themename}{
-    \textbf{\textsc{metropolis}}\xspace
-}
-
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\usepackage{graphicx}
 \usepackage{subfiles}
 \usepackage{tikz}
-
-% http://tex.stackexchange.com/questions/196886/reading-code-from-external-file-in-tcolorbox-and-getting-pdflatex-paragraph-e
 \usepackage[cache=false]{minted}
-
-%\begin{minted}[linenos=true]{c++}
-%\end{minted}
-
 \usepackage{tcolorbox}
 \tcbuselibrary{minted, skins, listings}
 
@@ -62,14 +54,15 @@
     size=small,
     listing only,
     listing options={style=tcblatex, language=sh},
-    every listing line={
-        \textcolor{black!60}{\small\ttfamily\bfseries[user@pc]\$ }
-    }
+    every listing line={\textcolor{black!60}{\small\ttfamily\bfseries[user@pc]\$ }}
 }
 
 %\begin{commandshell}
 %    Hello World!
 %\end{commandshell}
+
+
+
 
 % -------------------------------------------------------------------
 % Title
@@ -80,7 +73,6 @@
 \author{Scott Day}
 \email{265815F@curtin.edu.au}
 \institute{Curtin University}
-%\titlegraphic{\hfill\includegraphics[height=1.5cm]{curtinlogo.jpg}}
 
 
 
@@ -92,6 +84,12 @@
 % Table of Contents
 
 \maketitle
+
+\begin{frame}[fragile]{Insert Mandatory Programming Joke}
+    \begin{center}
+        \makebox[\textwidth]{\includegraphics[width=0.95\paperwidth,height=0.95\textheight]{graphics/xkcd1046-skynet.png}}
+    \end{center}
+\end{frame}
 
 \begin{frame}{Table of contents}
   \setbeamertemplate{section in toc}[sections numbered]
