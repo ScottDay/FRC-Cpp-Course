@@ -28,15 +28,15 @@
     colframe=black!70,
     listing only,
     size=tight,
-    minted style=colorful,
+    minted style=monokai,
     minted language=cpp,
-    minted options={breaklines=true,fontsize=\small,tabsize=2,linenos=true,numbersep=2mm,texcl=true,#1},
+    minted options={breaklines=true,fontsize=\footnotesize,tabsize=2,linenos=true,numbersep=2mm,texcl=true,#1},
     left=5mm,
     enhanced,
     overlay={\begin{tcbclipinterior}\fill[black!25] (frame.south west)
             rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
 }
-\definecolor{cppcodebg}{rgb}{0.85,0.85,0.85}
+\definecolor{cppcodebg}{rgb}{0.20,0.20,0.20} %0.85
 
 
 %\newtcblisting{commandshell}{
