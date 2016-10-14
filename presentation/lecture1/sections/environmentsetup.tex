@@ -6,26 +6,89 @@
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{Setup and Installation}
+\begin{frame}[fragile]{C++ Editors}
+    The easiest way to compile console programs depeds on the particular tool you
+    are using. \newline
 
+    The easiest way for beginners to compile C++ programs is by using an Integrated
+    Development Environment (IDE). \newline
 
-
+    An IDE generally integrates several development tools, including a text editor
+    and tools to compile programs directly from it.
 \end{frame}
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{C++ Editors}
+\begin{frame}[fragile]{Samples}
+    Some IDE's:
+    \begin{itemize}
+        \item \href{https://www.visualstudio.com/}{Visual Studio},
+        \item \href{https://www.jetbrains.com/clion/}{CLion}
+    \end{itemize}
 
+    Or you can use a text editor:
+    \begin{itemize}
+        \item \href{https://atom.io/}{Atom} (pretty baller),
+        \item \href{https://www.sublimetext.com/}{Sublime Text},
+        \item \href{https://notepad-plus-plus.org/}{Notepad++}
+    \end{itemize}
 
+    Sample compilers:
+    \begin{itemize}
+        \item \href{https://gcc.gnu.org/}{GCC} (use MinGW for windows),
+        \item \href{http://clang.llvm.org/}{Clang}
+    \end{itemize}
+\end{frame}
 
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Setup and Installation}
+    Refer to the relevant documentation of whatever tool/compiler you choose to use.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Compiling}
+    The typical filename extensions are:
+    \begin{itemize}
+        \item ".cpp" for a C++ source file.
+        \item ".hpp" for a C++ header file.
+    \end{itemize}
+    Gcc can compile C++ as well as C:
+    \begin{commandshell}
+gcc -c file1.cpp
+gcc -c file2.cpp
+gcc file1.o file2.o -o prog -lstdc++
+    \end{commandshell}
+    \begin{itemize}
+        \item The ".cpp" extension tells gcc that it's dealing with C++ code.
+        \item "-o name" gives the output filename. Without it the executable will be
+        called "a.out", which is silly.
+        \item "-lstdc++" tells gcc to link against the C++ library.
+    \end{itemize}
+    Alternatively, you can use "g++":
+    \begin{commandshell}
+g++ file1.o file2.o -o prog
+    \end{commandshell}
+    You can use Makefiles to simplify the process.
+\end{frame}
 
+% -------------------------------------------------------------------
 
-
+\begin{frame}[fragile]{Makefiles}
+    \begin{cppcode}
+target: dependencies
+[tab] system command
+    \end{cppcode}
+    This syntax applied to our example would look like:
+    \begin{cppcode}
+all:
+    g++ file1.cpp file2.cpp -o hello
+    \end{cppcode}
+    To run this makefile, type:
+    \begin{commandshell}
+make
+    \end{commandshell}
 \end{frame}
 
 % -------------------------------------------------------------------
