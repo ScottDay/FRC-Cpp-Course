@@ -22,21 +22,22 @@
 
 
 # Section ___ : Variables and Data Types
+## Data Types
 1. Identifiers
 2. Reserved words
 3. Data Types
 4. Choosing Data Types
-
+## Variables
 5. Variables
 6. Naming conventions
 7. Assignment of statements
-
+## Arithmetic Operators
 8. Arithmetic Expressions (Operators)
 9. Precedence and nesting parentheses
-
+## Misc
 10. Initialization of variables
 11. Expressions with mixed variable types (Type Casting)
-12. Declaration an Initialization of symbolic constants
+12. Declaration and Initialization of symbolic constants
 
 ### Example
 1. Programming as a Problem Solving Process
