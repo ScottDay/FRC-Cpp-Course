@@ -23,6 +23,7 @@
 \RequirePackage{calc}
 \RequirePackage{pgfopts}
 \RequirePackage{tikz}
+\RequirePackage{hyperref}
 \pgfkeys{
   /metropolis/inner/sectionpage/.cd,
     .is choice,
@@ -48,8 +49,6 @@
   }
 }
 
-%\newcommand*{\email}[1]{\def\insertemail{#1}}
-\RequirePackage{hyperref}
 \newcommand*{\email}[1]{\def\insertemail{\href{mailto:#1}{#1}}}
 
 \setbeamertemplate{title page}{
