@@ -5,8 +5,6 @@
 3. Example
 ## C++
 4. The C++ Programming Language
-5. Pervasiveness of C++
-6. Why choose C++
 7. Brief History of C++
 8. Example C++ Program (Hello world)
 ## Environment Setup
