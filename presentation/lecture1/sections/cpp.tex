@@ -38,6 +38,14 @@
 
 % -------------------------------------------------------------------
 
+\begin{frame}[fragile]{If You Understand This, I Have Nothing Left To Teach You}
+    \begin{center}
+        \makebox[\textwidth]{\includegraphics[width=\paperwidth,height=\textheight,keepaspectratio]{graphics/c-programming-memes-17.jpg}}
+    \end{center}
+\end{frame}
+
+% -------------------------------------------------------------------
+
 \begin{frame}[fragile]{Example C++ Program (Hello World)}
     \begin{cppcode}[]
 #include <iostream>
@@ -50,8 +58,7 @@ int main()
     \end{cppcode}
 
     \begin{commandshell}
-g++ -c helloworld.cpp
-g++ helloworld.o -o helloworld
+g++ -std=c++11 -o helloworld *.cpp
 ./helloworld
 Hello World!
     \end{commandshell}
