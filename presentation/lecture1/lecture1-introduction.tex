@@ -1,19 +1,28 @@
-\documentclass[9pt]{beamer}
-\usetheme[progressbar=frametitle]{metropolis}
+%\documentclass[notes, 9pt]{beamer}      % print frame + notes
+%\documentclass[notes=only, 9pt]{beamer} % only notes
+\documentclass[9pt]{beamer}              % only frames
+%\documentclass[handout, 9pt]{beamer}
 
 %pgfpagesuselayout{4 on 1}
 
+% Notes within frame content
+% \mode<handout>{\newline\textcolor{red}{notetext}}
+
+\usetheme[progressbar=frametitle]{metropolis}
+
 \usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
+% \usepackage[scale=2]{ccicons}
 
 \usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\newcommand{\themename}{
+    \textbf{\textsc{metropolis}}\xspace
+}
 
 \usepackage{subfiles}
 \usepackage{tikz}
 
 % http://tex.stackexchange.com/questions/196886/reading-code-from-external-file-in-tcolorbox-and-getting-pdflatex-paragraph-e
-\usepackage{minted}
+\usepackage[cache=false]{minted}
 
 %\begin{minted}[linenos=true]{c++}
 %\end{minted}
@@ -29,7 +38,7 @@
     colframe=black!70,
     listing only,
     size=tight,
-    minted style=monokai,
+    minted style=scott,
     minted language=cpp,
     minted options={
         breaklines=true,

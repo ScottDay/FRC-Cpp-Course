@@ -15,5 +15,5 @@ compile: ${compiler} ${compileropts} ${filename}
 
 read: ${pdfviewer} "${filename}"
 
-clean: del ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg,synctex,listing,nav,snm,toc,vrb}
+clean: del ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg,synctex.gz,listing,nav,snm,toc,vrb}
 	del _minted-lecture1-introduction

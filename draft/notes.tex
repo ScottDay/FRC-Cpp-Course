@@ -1,0 +1,49 @@
+%\documentclass[notes]{beamer}       % print frame + notes
+%\documentclass[notes=only]{beamer}   % only notes
+\documentclass{beamer}              % only frames
+
+\title[Your Short Title]{Your Presentation}
+\author{You}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+    \frametitle{Introduction}:
+
+\begin{itemize}
+  \item Your introduction goes here!
+  \item Use \texttt{itemize} to organize your main points.
+\note{inside frame1}
+\note{inside frame2}
+\note{inside frame3}
+\end{itemize}
+
+\note{inside frame}
+\end{frame}
+\note{outside frame Everything you wantjlkjölkj}
+
+\begin{frame}
+    \frametitle{Development}
+
+    Lot of interesting things
+
+\end{frame}
+
+\note[itemize]{
+\item point 12
+\item point 2
+}
+
+\begin{frame}
+    \frametitle{Development}
+
+    Lot of interesting things
+
+\end{frame}
+
+\end{document}
