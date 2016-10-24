@@ -41,3 +41,7 @@ This course is primarily intended for students taking part in FRC, but can be ap
 ### Beyond the Lesson
 
 Massive Open Online Courses (MOOC)
+
+## Compiling
+
+xelatex.exe -synctex=1 -interaction=nonstopmode -shell-escape %.tex

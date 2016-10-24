@@ -1,4 +1,5 @@
 # Baller Monokai styling
+# search-ms:displayname=Search%20Results%20in%20Python35-32&crumb=location:C%3A%5CUsers%5CScott%5CAppData%5CLocal%5CPrograms%5CPython%5CPython35-32\styles
 
 from pygments.style import Style
 from pygments.token import Keyword, Name, Comment, String, Error, Text, \
