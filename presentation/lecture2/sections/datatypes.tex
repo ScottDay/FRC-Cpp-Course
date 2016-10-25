@@ -25,61 +25,31 @@
     C++ has a whole table of reserved words (also known as keywords). \newline
 
     Since they are used by the language, these keywords are not available for
-    re-definition or overloading. \newline \newline
+    re-definition or overloading. \newline
 
     The following list contains some of the reserved words you might come across:
-    \begin{columns} % Convert this to a table
-        \column{.5\textwidth}
-            \begin{itemize}
-                \item and
-                \item auto
-                \item bool
-                \item break
-                \item case
-                \item catch
-                \item char
-                \item class
-                \item const
-            \end{itemize}
-        \column{.5\textwidth}
-            \begin{itemize}
-                \item continue
-                \item default
-                \item delete
-                \item do
-                \item double
-                \item dynamic_cast
-                \item else
-                \item enum
-                \item export
-            \end{itemize}
-        \column{.5\textwidth}
-            \begin{itemize}
-                \item extern
-                \item false
-                \item float
-                \item for
-                \item if
-                \item int
-                \item import
-                \item long
-                \item module
-                \item mutable
-                \item namespace
-                \item new
-                \item private
-                \item protected
-                \item public
-            \end{itemize}
-    \end{columns}
-    The full list with explanations can be found at \href{http://en.cppreference.com/w/cpp/keyword}{cppreference.com}.
+    \begin{table}
+        \center
+        \begin{tabular}{cccc}
+            \toprule
+            and & auto & bool & break \\
+            case & catch & char & class \\
+            const & continue & default & delete \\
+            do & double & dynamic\_cast & else \\
+            num & export & extern & false \\
+            float & for & if & int \\
+            import & long & module & mutable \\
+            namespace & new & private & protected \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    The full list with explanations can be found at \href{http://en.cppreference.com/w/cpp/keyword}{cppreference.com}
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Data Types}
-
-    C++ has several built-in as well as user defined data types to choose from. \newline \newline
+    C++ has several built-in as well as user defined data types to choose from. \newline
     some of the basic C++ data types are:
     \begin{table}
         \center
@@ -87,12 +57,12 @@
             \toprule
             \textbf{Type} & \textbf{Keyword} & \textbf{Width} & \textbf{Range} \\
             \midrule
-Boolean & bool & 1 Byte & true, false \\
-Character & char & 1 Byte & -128 to 127 or 0 to 255 \\
-Integer & int & 4 Bytes & -2,147,483,648 to 2,147,483,647 \\
-Floating point & float & 4 Bytes & $\pm 3.4 \cdot 10^{\pm 38}$ (\textasciitilde7 digits) \\
-Double floating point & double & 8 Bytes & $\pm 1.7 \cdot 10^{\pm 308}$ (\textasciitilde15 digits) \\
-Valueless & void & & \\
+            Boolean & bool & 1 Byte & true, false \\
+            Character & char & 1 Byte & -128 to 127 or 0 to 255 \\
+            Integer & int & 4 Bytes & -2,147,483,648 to 2,147,483,647 \\
+            Floating point & float & 4 Bytes & $\pm3.4\cdot10^{\pm38}$ (\textasciitilde7 digits) \\
+            Double floating point & double & 8 Bytes & $\pm1.7\cdot10^{\pm308}$ (\textasciitilde15 digits) \\
+            Valueless & void & & \\
             \bottomrule
         \end{tabular}
     \end{table}
