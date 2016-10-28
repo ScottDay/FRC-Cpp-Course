@@ -1,4 +1,4 @@
- %\documentclass[notes, 9pt]{beamer}      % print frame + notes
+%\documentclass[notes, 9pt]{beamer}      % print frame + notes
 %\documentclass[notes=only, 9pt]{beamer} % only notes
 \documentclass[9pt]{beamer}              % only frames
 %\documentclass[handout, 9pt]{beamer}
@@ -34,12 +34,11 @@
     minted language=cpp,
     minted options={
         breaklines=true,
-        fontsize=\tiny,
+        fontsize=\footnotesize,
         tabsize=2,
         linenos=true,
         numbersep=2mm,
         texcl=true,
-        samepage=true,
         #1
     },
     left=5mm,
@@ -68,7 +67,7 @@
 % -------------------------------------------------------------------
 % Title
 
-\title{Lecture 1: Introduction to C++ Programming}
+\title{Lecture 2: Datatypes and Variables}
 \subtitle{Curtin FIRST Robotics Club (FRC) Pre-season Training}
 \date{\today}
 \author{Scott Day}
@@ -88,7 +87,7 @@
 
 \begin{frame}[fragile]{Insert Mandatory Programming Joke}
     \begin{center}
-        \makebox[\textwidth]{\includegraphics[width=0.95\paperwidth,height=0.95\textheight]{graphics/xkcd138-pointers.png}}
+        \makebox[\textwidth]{\includegraphics[width=0.95\paperwidth,height=0.95\textheight]{graphics/xkcd1046-skynet.png}}
     \end{center}
 \end{frame}
 
@@ -100,26 +99,21 @@
 % -------------------------------------------------------------------
 % Core
 
-\subfile{sections/programming.tex}
-\subfile{sections/cpp.tex}
-\subfile{sections/environmentsetup.tex}
-\subfile{sections/editingcompilingandexecution.tex}
-\subfile{sections/programmingchallenge.tex}
+\subfile{sections/datatypes.tex}
+\subfile{sections/variables.tex}
+\subfile{sections/arithmeticoperators.tex}
+\subfile{sections/misc.tex}
 
 % -------------------------------------------------------------------
 % References
 
-\begin{frame}[allowframebreaks]{References}
-    \bibliography{references}
-    \bibliographystyle{abbrv}
-\end{frame}
+% https://airbrake.io/blog/just-for-fun/best-programming-xkcd-comics
+% https://explainextended.com/2014/07/09/top-5-xkcd-comics-which-can-illustrate-programming-questions/
 
-% http://xkcd.com/138/
-% http://xkcd.com/1619/
-% http://weknowmemes.com/wp-content/uploads/2012/02/breading-cats-2.jpg
-% https://imgs.xkcd.com/comics/goto.png
-% http://www.dandelion-films.com/c-programming-memes-17.jpg
-% https://xkcd.com/1168/
+\begin{frame}[allowframebreaks]{References}
+  \bibliography{references}
+  \bibliographystyle{abbrv}
+\end{frame}
 
 % -------------------------------------------------------------------
 \end{document}

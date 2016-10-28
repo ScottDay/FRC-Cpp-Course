@@ -54,7 +54,7 @@
     size=small,
     listing only,
     listing options={style=tcblatex, language=sh},
-    every listing line={\textcolor{black!60}{\small\ttfamily\bfseries[user@pc]\$ }}
+    every listing line={\textcolor{black!60}{\small\ttfamily\bfseries[user@pc]\$}}
 }
 
 %\begin{commandshell}
@@ -62,12 +62,28 @@
 %\end{commandshell}
 
 
+%\begin{tabular}{ll}
+  %\verb|&|  & bitwise and\\
+  %\verb|&&| & logical and\\
+  %\verb|^|  & bitwise xor\\
+  %\verb+|+  & bitwise or\\
+  %\verb+||+ & logical or\\
+  %\verb|<|  & less than\\
+  %\verb|<=| & less than or equal to\\
+  %\verb|>|  & greater than\\
+  %\verb|>=| & greater than or equal to\\
+  %\verb|==| & equal to\\
+  %\verb|!=| & not equal to\\
+  %\verb|%|  & modulo\\
+  %\verb|~|  & bitwise not\\
+%\end{tabular}
+
 
 
 % -------------------------------------------------------------------
 % Title
 
-\title{Lecture 2: Variables and Control Structures}
+\title{Lecture 3: Flow of Control}
 \subtitle{Curtin FIRST Robotics Club (FRC) Pre-season Training}
 \date{\today}
 \author{Scott Day}
@@ -99,14 +115,9 @@
 % -------------------------------------------------------------------
 % Core
 
-\subfile{sections/datatypes.tex}
-\subfile{sections/variables.tex}
-\subfile{sections/arithmeticoperators.tex}
-\subfile{sections/conditionalcontrolstructures.tex}
-\subfile{sections/selectioncontrolstatements.tex}
-\subfile{sections/booleanoperators.tex}
-\subfile{sections/iterativecontrolstructures.tex}
-\subfile{sections/misc.tex}
+\subfile{sections/conditionals.tex}
+\subfile{sections/loops.tex}
+\subfile{sections/nestedcontrolstructures.tex}
 
 % -------------------------------------------------------------------
 % References
@@ -115,7 +126,7 @@
 % https://explainextended.com/2014/07/09/top-5-xkcd-comics-which-can-illustrate-programming-questions/
 
 \begin{frame}[allowframebreaks]{References}
-  \bibliography{sections/references}
+  \bibliography{references}
   \bibliographystyle{abbrv}
 \end{frame}
 
