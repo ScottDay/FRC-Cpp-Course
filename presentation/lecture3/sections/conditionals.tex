@@ -23,12 +23,12 @@ t
             \toprule
             \textbf{Operator} & \textbf{Shorthand} & \textbf{Meaning} \\
             \midrule
-            \verb|>|  &     & Greater than \\
-            \verb|>=| & \ge & Greater than or equal to \\
-            \verb|<|  &     & Less than \\
-            \verb|<=| & \le & Less than or equal to \\
-            \verb|==| &     & Equal to \\
-            \verb|!=| & \ne & Not equal to \\
+            \verb|>|  &       & Greater than \\
+            \verb|>=| & $\ge$ & Greater than or equal to \\
+            \verb|<|  &       & Less than \\
+            \verb|<=| & $\le$ & Less than or equal to \\
+            \verb|==| &       & Equal to \\
+            \verb|!=| & $\ne$ & Not equal to \\
             \bottomrule
         \end{tabular}
     \end{table}
@@ -50,6 +50,8 @@ t
 \end{frame}
 
 \begin{frame}[fragile]{Truth Tables}
+    Operators return \verb|true| or \verb|false|, according to the rules of logic:
+
     \begin{columns}[T,onlytextwidth]
         \column{.2\textwidth}
             \begin{table}
@@ -90,7 +92,30 @@ t
             \end{table}
     \end{columns}
 
-    
+    \begin{center}
+        Examples using logical operators (assume \verb|x = 6| and \verb|y = 2|):
+    \end{center}
+
+    \begin{table}
+        \center
+        \begin{tabular}{cr}
+            \pause \verb|!(x > 2)|           & \pause false \\
+            \pause \verb|(x > y) && (y > 0)| & \pause true  \\
+            \pause \verb|(x < y) && (y > 0)| & \pause false \\
+            \pause \verb+(x < y) || (y > 0)+ & \pause true  \\
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}[fragile]{C++ Boolean}
+    Boolean variables can be used directly in these expressions, since they hold \verb|true| and \verb|false| values. \newline
+
+    Funny enough, any kind of value can be used in a Boolean expression due to a quirk C++ has:
+    \begin{center}
+        \verb|false| is represented by a value of 0 and anything that is not 0 is \verb|true|. \newline
+    \end{center}
+
+    So, “Hello, world!” is \verb|true|, 2 is \verb|true|, and any int variable holding a non-zero value is \verb|true|. This means \verb|!x| returns \verb|false| and \verb|x && y| returns \verb|true|!
 \end{frame}
 
 % -------------------------------------------------------------------
