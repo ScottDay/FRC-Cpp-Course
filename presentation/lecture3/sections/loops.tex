@@ -7,19 +7,105 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Loops}
-t
+Conditionals execute certain statements if certa\texttt{while} in conditions are met; loops execute certain statements while certain conditions are met. C++ has three kinds of loops: \texttt{while}, \texttt{do-while}, and \texttt{for}.
 \end{frame}
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{While and Do-While}
-t
+\begin{frame}[fragile]{While}
+    The \texttt{while} loop has a form similar to the if conditional:
+
+\begin{cppcode}[]
+while(condition)
+{
+    statement1
+    statement2
+    ...
+}
+\end{cppcode}
+
+    As long as the condition holds, the block of statements will be repeatedly executed. \newline
+
+    If there is only one statement, the curly braces may be omitted.
+\end{frame}
+
+\begin{frame}[fragile]{While Example}
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 0;
+
+    while(x < 10)
+        x = x + 1;
+
+    cout << "x is " << x << endl;
+
+    return 0;
+}
+\end{cppcode}
+
+    This program will print \verb|x is 10|.
+\end{frame}
+
+\begin{frame}[fragile]{Do-While}
+    The \texttt{do-while} loop is a variation that guarantees the block of statements will be executed at least once:
+
+\begin{cppcode}[]
+do
+{
+    statement1
+    statement2
+    ...
+}
+while(condition);
+\end{cppcode}
+
+    The block of statements is eecuted and then, if the condition holds, the program returns to the top of the block. \newline
+
+    Curly braces are always required. \newline
+
+    Also not note the semicolon after the \texttt{while} condition.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{For}
-t
+    The \texttt{for} loop works like the while loop but with some change in syntax:
+
+\begin{cppcode}[]
+for(initialization; condition; incrementation)
+{
+    statement1
+    statement2
+    ...
+}
+\end{cppcode}
+
+    The for loop is designed to allow a counter variable that is initialized at the beginning of the loop and incremented (or decremented) on each iteration of the loop. \newline
+
+    Curly braces may be omitted if there is only one statement.
+\end{frame}
+
+\begin{frame}[fragile]{For Example}
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for(int x = 0; x < 10; x = x + 1) // or x++
+        cout << x << endl;
+
+    return 0;
+}
+\end{cppcode}
+
+    This program will print out the values \texttt{0} through \texttt{9}. \newline
+
+    If the counter variable is already defined, there is no need to define a new one in the initialization porrtion of the for loop,
 \end{frame}
 
 % -------------------------------------------------------------------

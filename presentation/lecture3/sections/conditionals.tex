@@ -7,16 +7,20 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Conditionals}
-t
+    In order for a program to change its behavior depending on the input, there must be a way to test that input. Conditionals allow the program to check the values of variables and to execute (or not execute) certain statements. \newline
+
+    C++ has \texttt{if} and \texttt{switch-case} conditional structures.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Operators}
-t
+    Conditionals use two kinds of special operators: \texttt{relational} and \texttt{logical}. These are used to determine whether some condtion is true or false.
 \end{frame}
 
 \begin{frame}[fragile]{Relational Operators}
+    Relational operators are used to test a relation between two expressions:
+
     \begin{table}
         \center
         \begin{tabular}{c|c|c}
@@ -32,9 +36,15 @@ t
             \bottomrule
         \end{tabular}
     \end{table}
+
+    They work the same as the arithmetic operators (e.g. \verb|a > b|) but return a Boolean value of either \texttt{true} or \texttt{false}, indicating whether the relation tested for holds (Boolean expression). \newline
+
+    For example, if the variables \verb|x| and \verb|y| have been set to 6 and 2, respectively, then \verb|x > y| returns \texttt{true}. Similarly, \verb|x < 5| returns \texttt{false}.
 \end{frame}
 
 \begin{frame}[fragile]{Logical Operators}
+    The logical operators are often used to combine relational expressions into more complicated Boolean expressions. \newline
+
     \begin{table}
         \center
         \begin{tabular}{c|c}
@@ -50,7 +60,7 @@ t
 \end{frame}
 
 \begin{frame}[fragile]{Truth Tables}
-    Operators return \verb|true| or \verb|false|, according to the rules of logic:
+    Operators return \texttt{true} or \texttt{false}, according to the rules of logic:
 
     \begin{columns}[T,onlytextwidth]
         \column{.2\textwidth}
@@ -93,13 +103,13 @@ t
     \end{columns}
 
     \begin{center}
-        Examples using logical operators (assume \verb|x = 6| and \verb|y = 2|):
+        Example questions using logical operators (assume \verb|x = 6| and \verb|y = 2|):
     \end{center}
 
     \begin{table}
         \center
         \begin{tabular}{cr}
-            \pause \verb|!(x > 2)|           & \pause false \\
+            \verb|!(x > 2)|           & \pause false \\
             \pause \verb|(x > y) && (y > 0)| & \pause true  \\
             \pause \verb|(x < y) && (y > 0)| & \pause false \\
             \pause \verb+(x < y) || (y > 0)+ & \pause true  \\
@@ -131,6 +141,10 @@ if(condition)
 }
 \end{cppcode}
 
+    The condition is some expression whose value is being tested. If the condition resolves to a value of \texttt{true}, then the statements are executed before the program continues on. Otherwise, the statements are ignored. \newline
+
+    If there is only one statement, the curly braces may be omitted, giving the form:
+
 \begin{cppcode}[]
 if(condition)
     statement
@@ -138,7 +152,7 @@ if(condition)
 \end{frame}
 
 \begin{frame}[fragile]{If-Else}
-    The \verb|if-else| form is used to decide between two sequences of statements referred to as \verb|blocks|:
+    The \verb|if-else| form is used to decide between two sequences of statements referred to as \texttt{blocks}:
 \begin{cppcode}[]
 if(condition)
 {
@@ -154,6 +168,9 @@ else
 }
 \end{cppcode}
 
+    If the condition is met, the block corresponding to the \mintinline[bgcolor=black!03]{cpp}|if| is executed. Otherwise, the block corresponding to the \mintinline[bgcolor=black!03]{cpp}|else| is executed. \newline
+
+    If there is only one statement for any of the blocks, the curly bracers for that black may be omitted:
 \begin{cppcode}[]
 if(condition)
     statementA1
@@ -178,6 +195,8 @@ else if(condition2)
     ...
 }
 \end{cppcode}
+
+    If \texttt{condition1} is met, the block corresponding to the \mintinline[bgcolor=black!03]{cpp}|if| is executed. If not, then only if \texttt{condition2} is met is the block corresponding to the \mintinline[bgcolor=black!03]{cpp}|else if| executed.
 \end{frame}
 
 \begin{frame}[fragile]{If Example}

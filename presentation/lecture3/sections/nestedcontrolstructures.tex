@@ -7,19 +7,63 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Nested Control Structures}
-t
+    It is possible to place ifs inside of ifs and loops inside of loops by simply placing these structures inside the statement blocks. \newline
+
+    This allows for more complicated program behaviour.
 \end{frame}
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{Nested Conditionals}
-t
+\begin{frame}[fragile]{Nested If Conditionals}
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 6;
+    int y = 0;
+
+    if(x > y)
+    {
+        cout << "x is greater than y" << endl;
+
+        if(x == 6)
+            cout << "x is equal to 6" << endl;
+        else
+            cout << "x is not equal to 6" << endl;
+    }
+    else
+        cout << "x is not greater than y" << endl;
+
+    return 0;
+}
+\end{cppcode}
+
+    This program will print \verb|x is greater than y| on one line and then \verb|x is equal to 6| on the next line.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Nested Loops}
-t
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for(int x = 0; x < 4; x = x + 1)
+    {
+        for(int y - 0; y < 4; y = y + 1)
+            cout << y;
+        cout << endl;
+    }
+
+    return 0;
+}
+\end{cppcode}
+
+    This program will print four lines of \texttt{0123}.
 \end{frame}
 
 % -------------------------------------------------------------------
