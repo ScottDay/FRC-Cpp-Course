@@ -2,6 +2,8 @@
 
 A basic introduction to C++ intended for Curtin FRC teams
 
+FYI: THIS IS STILL A WORK IN PROGRESS
+
 ## Requirements
 
 You can use any C++ IDE/editor and compiler to follow this course.
