@@ -1,6 +1,6 @@
 # Latex Makefile for Windows
 
-filename = lecture1-introduction.tex
+filename = lecture3-flowofcontrol.tex
 
 compiler     = xelatex.exe
 compileropts = -synctex=1 -interaction=nonstopmode -shell-escape

@@ -1,6 +1,6 @@
 # Latex Makefile for Windows
 
-filename = lecture2-datatypesandvariables.tex
+filename = lecture2-objectorientation.tex
 
 compiler     = xelatex.exe
 compileropts = -synctex=1 -interaction=nonstopmode -shell-escape

@@ -77,12 +77,24 @@
 
 
 
-# Section ___ : Environments
-## Header Files
-## Compiling
-## The Preprocessor
-## Access
-## Make
+# Section ___ : Object Orientation
+1. Classes & Objects
+    - Class Syntax
+    - Member Function Definitions
+    - Namespaces
+2. Inheritance
+3. Overloading
+4. Polymorphism
+5. Abstraction
+6. Encapsulation
+7. Interfaces
+
+
+
+# Section ___ : Advanced C++
+1. Templates (Generics)
+2. Exception Handling
+2. Files and Streams
 
 
 
@@ -106,37 +118,6 @@
 
 
 
-# Section ___ : Object Orientated
-1. Classes & Objects
-    - Class Syntax
-    - Member Function Definitions
-    - Namespaces
-2. Inheritance
-3. Overloading
-4. Polymorphism
-5. Abstraction
-6. Encapsulation
-7. Interfaces
-
-
-
-# Section ___ : Advanced C++
-1. Templates (Generics)
-2. Exception Handling
-2. Files and Streams
-
-
-
-# Section ___ : UML
-
-
-
-# Section ___ : Debugging and Testing
-1. Valgrind
-2. Unit Testing
-
-
-
 # Section ___ : Builds and Integration
 ## Build Tools
 1. Make
@@ -156,6 +137,13 @@
 
 
 
+# Section ___ : UML
+
+
+
+# Section ___ : Debugging and Testing
+1. Valgrind
+2. Unit Testing
 
 
 
