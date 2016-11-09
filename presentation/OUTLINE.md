@@ -66,14 +66,15 @@
 
 
 # Section ___ : Functions
-1. Function definition
-2. Example of function definition, declaration and call
-3. Function header and body
-4. Function declaration
-5. Function call and execution
-6. Function arguments
-7. Passing by value or reference
-8. Recursion - just to fuck with you
+1. Function Justification
+2. Function definition
+3. Example of function definition, declaration and call
+4. Function header and body
+5. Function declaration
+6. Function call and execution
+7. Function arguments
+8. Passing by value or reference
+9. Recursion - just to fuck with you
 
 
 
