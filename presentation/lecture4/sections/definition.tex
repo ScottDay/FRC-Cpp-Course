@@ -7,7 +7,24 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{}
-t
+    In C++, a function is a group of statements that is given a name, and which can be called from some point of the program. The most common syntax to define a function is: \newline
+
+    % fix this
+    return-value-type function-name(parameter1, parameter2, \dots) \newline
+    \{ \newline
+        \quad declaration of local variables; \newline
+        \quad statements; \newline
+
+        \quad return return-value; \newline
+    \} \newline
+
+    Where:
+    \begin{description} % Replace with table, bold left column, no vertical line
+        \item[return-value-type] Is the type of the value returned by the function.
+        \item[function-name]     Is the identifier by which the function can be called.
+        \item[parameters] Each parameter consists of a type followed by an identifier, with each parameter beign separated from the next by a comma.
+        \item[statements] Is the function's body. It is a block of statements surrounded by braces \{ \} that specify what the function actually does.
+    \end{description}
 \end{frame}
 
 % -------------------------------------------------------------------
