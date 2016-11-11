@@ -6,20 +6,165 @@
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{}
-t
+\begin{frame}[fragile]{Example 1 - Addition}
+    \begin{itemize}
+        \item A very basic example of using a function
+        \item Note: Both examples do the exact same thing.
+    \end{itemize}
+
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+            \begin{cppcode}[]
+// Function Example
+#include <iostream>
+using namespace std;
+
+int addition(int a, int b)
+{
+    int result;
+
+    result = a + b;
+
+    return result;
+}
+
+int main()
+{
+    int temp;
+
+    temp = addition(5, 3);
+    cout << "The result is: " << temp << endl;
+
+    return 0;
+}
+            \end{cppcode}
+        \column{.5\textwidth}
+                \begin{cppcode}[]
+// Function Example
+#include <iostream>
+using namespace std;
+
+int addition(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    cout << "The result is: " << addition(5, 3) << endl;
+
+    return 0;
+}
+                \end{cppcode}
+    \end{columns}
 \end{frame}
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{}
-t
+\begin{frame}[fragile]{Example 2 - Factorial}
+    Let us first look at an example of a program writen entirely with the function main() and then we will modify it to use an additional \textbf{function call}. \newline
+
+    We will illustrate this with a program to calculate the factoriall (n!) of an integer number (n) using a for loop to compute:
+
+    \verb|n! = 1 x 2 x 3...(n-2) x (n-1) x n|
 \end{frame}
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{}
-t
+\begin{frame}[fragile]{Example 2 - Factorial}
+    \begin{cppcode}[]
+// Program to calculate factorial of a number
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int ii, number = 0, factorial = 1;
+
+    // User input must be an integer number between 1 and 10
+    while(number < 1 || number > 10)
+    {
+        cout << "Enter integer number (1-10) = ";
+        cin >> number;
+    }
+
+    // Calculate the factorial with a FOR loop
+    for(ii = 1; ii <= number; ii++)
+    {
+        factorial = factorial * ii;
+    }
+
+    // Output result
+    cout << "Factorial = " << factorial << endl;
+    return 0;
+}
+    \end{cppcode}
+
+    Even though the program is very short, the code to calculate the factorial is best placed inside a function since it is likely to be executed many times in the same program.
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Example 2 - Factorial}
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+            \begin{cppcode}[]
+// Program to calculate factorial of a number with function call
+#include <iostream>
+using namespace std;
+
+// Function declaration (prototype)
+int factorial(int number);
+
+int main()
+{
+    int number = 0, result;
+
+    // User input must be an integer number between 1 and 10
+    while(number < 1 || number > 10)
+    {
+       cout << "Integer number = ";
+       cin >> number;
+    }
+
+    // Function call and assignment of return value to result
+    result = factorial(number);
+
+    // Output result
+    cout << "Factorial = " << result << endl;
+    return 0;
+}
+            \end{cppcode}
+        \column{.5\textwidth}
+            \begin{cppcode}[firstnumber = 27]
+// An integer, number, is passed from caller function.
+int factorial(int number)
+{
+    int ii, factorial = 1;
+
+    // Calculate the factorial with a FOR loop
+    for(ii = 1; ii <= number; ii++)
+    {
+        factorial = factorial * ii;
+    }
+
+    return factorial; // This value is returned to caller
+}
+            \end{cppcode}
+    \end{columns}
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Example 2 - Factorial Discussion}
+    Three modifications have been made to incorporate a function:
+    \begin{itemize}
+        \item The \textbf{declaration} of the function above \mintinline{cpp}{int main()}. \\
+                The declaration (A.K.A the prototype) tells the compiler about the function and the type of data it requires and will return on completion.
+        \item The \textbf{function call} in the main body of the program determines when to branch to the function and how to return the value of the data computed back to the main program.
+        \item The \textbf{definition} of the function \mintinline{cpp}{int factorial(int number)} below the main program.\\
+                The definition consists of a \textbf{header} which specifies how the function will interface with the main program and a \textbf{body} which lists the statements to be executed when the function is called.
+    \end{itemize}
 \end{frame}
 
 % -------------------------------------------------------------------
