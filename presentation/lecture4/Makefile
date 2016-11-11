@@ -1,7 +1,7 @@
 # Latex Makefile for Linux and Windows
 # http://stackoverflow.com/questions/4058840/makefile-that-distincts-between-windows-and-unix-like-systems
 
-FILENAME = lecture4-functions.tex
+FILE_NAME = lecture4-functions.tex
 OS := $(shell uname)
 
 ifeq ($(OS), Linux)
@@ -16,16 +16,16 @@ else
 	endif
 endif
 
-compileropts = -synctex=1 -interaction=nonstopmode -shell-escape
+COMPILER_OPTS = -synctex=1 -interaction=nonstopmode -shell-escape
 
 # ----------
 
 all: compile clean
 
-compile: ${compiler} ${compileropts} ${FILENAME}
+compile: ${compiler} ${COMPILER_OPTS} ${FILE_NAME}
 
-clean: RM ${FILENAME}.{ps,log,aux,out,dvi,bbl,blg,synctex.gz,listing,nav,snm,toc,vrb}
+clean: RM ${FILE_NAME}.{ps,log,aux,out,dvi,bbl,blg,synctex.gz,listing,nav,snm,toc,vrb}
 	RM _minted-lecture1-introduction
 
 clean-all: clean
-	RM ${FILENAME}.pdf
+	RM ${FILE_NAME}.pdf
