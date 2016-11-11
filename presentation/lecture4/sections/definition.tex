@@ -9,22 +9,25 @@
 \begin{frame}[fragile]{}
     In C++, a function is a group of statements that is given a name, and which can be called from some point of the program. The most common syntax to define a function is: \newline
 
-    % fix this
-    return-value-type function-name(parameter1, parameter2, \dots) \newline
-    \{ \newline
-        \quad declaration of local variables; \newline
-        \quad statements; \newline
+\begin{cppcode}
+returnValueType functionName(type parameter1, type parameter2, ...)
+{
+    statements;
+}
+\end{cppcode}
 
-        \quad return return-value; \newline
-    \} \newline
-
+    \vspace{0.5cm}
     Where:
-    \begin{description} % Replace with table, bold left column, no vertical line
-        \item[return-value-type] Is the type of the value returned by the function.
-        \item[function-name]     Is the identifier by which the function can be called.
-        \item[parameters] Each parameter consists of a type followed by an identifier, with each parameter beign separated from the next by a comma.
-        \item[statements] Is the function's body. It is a block of statements surrounded by braces \{ \} that specify what the function actually does.
-    \end{description}
+    \begin{tabular}{rl}
+        \textbf{return-value-type} & Is the type of the value returned by the function. \\
+        \textbf{function-name}     & Is the identifier by which the function can be called. \\
+        \textbf{parameters}        & Each parameter consists of a type followed by an \\
+                                   & identifier,  with each parameter being separated from the \\
+                                   & next by a comma. \\
+        \textbf{statements}        & Is the function's body. It is a block of statements \\
+                                   & surrounded by braces \{ \} that specify what the \\
+                                   & function actually does. \\
+    \end{tabular}
 \end{frame}
 
 % -------------------------------------------------------------------
@@ -35,9 +38,12 @@ t
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{}
-t
+\begin{frame}[fragile]{Cute Dog}
+    \begin{center}
+        \makebox[\textwidth]{\includegraphics[width=0.80\paperwidth,height=0.80\textheight]{graphics/cutedog1.jpg}}
+    \end{center}
 \end{frame}
+
 
 % -------------------------------------------------------------------
 
