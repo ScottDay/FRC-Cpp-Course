@@ -1,0 +1,132 @@
+%\documentclass[notes, 9pt]{beamer}      % print frame + notes
+%\documentclass[notes=only, 9pt]{beamer} % only notes
+\documentclass[9pt]{beamer}              % only frames
+%\documentclass[handout, 9pt]{beamer}
+
+%pgfpagesuselayout{4 on 1}
+
+% Notes within frame content
+% \mode<handout>{\newline\textcolor{red}{notetext}}
+
+\usetheme[progressbar=frametitle]{metropolis}
+
+\usepackage{booktabs}
+\usepackage{hyperref}
+% \usepackage[scale=2]{ccicons}
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{tikz}
+\usepackage[cache=false]{minted}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\tcbuselibrary{minted, skins, listings}
+
+\definecolor{cppcodebg}{rgb}{0.20,0.20,0.20} %0.85
+
+\setmintedinline[cpp]{style=scott, bgcolor=black!70, fontsize=\footnotesize}
+
+\newtcblisting{cppcode}[1][]{
+    listing engine=minted,
+    colback=cppcodebg,
+    colframe=black!70,
+    listing only,
+    size=tight,
+    minted style=scott,
+    minted language=cpp,
+    minted options={
+        breaklines=true,
+        fontsize=\tiny,
+        tabsize=2,
+        linenos=true,
+        numbersep=2mm,
+        texcl=true,
+        #1
+    },
+    left=5mm,
+    enhanced,
+    overlay={\begin{tcbclipinterior}\fill[black!25] (frame.south west)
+            rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
+}
+
+\newtcblisting{commandshell}{
+    colback=cppcodebg, %black
+    colupper=white,
+    colframe=black!70,
+    size=small,
+    listing only,
+    listing options={style=tcblatex, language=sh},
+    every listing line={\textcolor{black!60}{\small\ttfamily\bfseries[user@pc]\$}}
+}
+
+%\begin{commandshell}
+%    Hello World!
+%\end{commandshell}
+
+
+%\begin{tabular}{ll}
+  %\verb|&|  & bitwise and\\
+  %\verb|&&| & logical and\\
+  %\verb|^|  & bitwise xor\\
+  %\verb+|+  & bitwise or\\
+  %\verb+||+ & logical or\\
+  %\verb|<|  & less than\\
+  %\verb|<=| & less than or equal to\\
+  %\verb|>|  & greater than\\
+  %\verb|>=| & greater than or equal to\\
+  %\verb|==| & equal to\\
+  %\verb|!=| & not equal to\\
+  %\verb|%|  & modulo\\
+  %\verb|~|  & bitwise not\\
+%\end{tabular}
+
+
+
+% -------------------------------------------------------------------
+% Title
+
+\title{Lecture 5: Object Orientation}
+\subtitle{Curtin FIRST Robotics Club (FRC) Pre-season Training}
+\date{\today}
+\author{Scott Day}
+\email{265815F@curtin.edu.au}
+\institute{Curtin University}
+
+
+
+% -------------------------------------------------------------------
+\begin{document}
+% -------------------------------------------------------------------
+
+% -------------------------------------------------------------------
+% Table of Contents
+
+\maketitle
+
+%\begin{frame}[fragile]{Insert Mandatory Programming Joke}
+%    \begin{center}
+%        \makebox[\textwidth]{\includegraphics[width=0.95\paperwidth,height=0.95\textheight]{graphics/xkcd1046-skynet.png}}
+%    \end{center}
+%\end{frame}
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% -------------------------------------------------------------------
+% Core
+
+\subfile{sections/conditionals.tex}
+
+% -------------------------------------------------------------------
+% References
+
+\begin{frame}[allowframebreaks]{References}
+  \bibliography{references}
+  \bibliographystyle{abbrv}
+\end{frame}
+
+% -------------------------------------------------------------------
+\end{document}

@@ -66,23 +66,36 @@
 
 
 # Section ___ : Functions
-1. Function definition
-2. Example of function definition, declaration and call
-3. Function header and body
-4. Function declaration
-5. Function call and execution
-6. Function arguments
-7. Passing by value or reference
-8. Recursion - just to fuck with you
+1. Function Justification
+2. Function definition
+3. Example of function definition, declaration and call
+4. Function header and body
+5. Function declaration
+6. Function call and execution
+7. Function arguments
+8. Passing by value or reference
+9. Recursion - just to fuck with you
 
 
 
-# Section ___ : Environments
-## Header Files
-## Compiling
-## The Preprocessor
-## Access
-## Make
+# Section ___ : Object Orientation
+1. Classes & Objects
+    - Class Syntax
+    - Member Function Definitions
+    - Namespaces
+2. Inheritance
+3. Overloading
+4. Polymorphism
+5. Abstraction
+6. Encapsulation
+7. Interfaces
+
+
+
+# Section ___ : Advanced C++
+1. Templates (Generics)
+2. Exception Handling
+2. Files and Streams
 
 
 
@@ -106,37 +119,6 @@
 
 
 
-# Section ___ : Object Orientated
-1. Classes & Objects
-    - Class Syntax
-    - Member Function Definitions
-    - Namespaces
-2. Inheritance
-3. Overloading
-4. Polymorphism
-5. Abstraction
-6. Encapsulation
-7. Interfaces
-
-
-
-# Section ___ : Advanced C++
-1. Templates (Generics)
-2. Exception Handling
-2. Files and Streams
-
-
-
-# Section ___ : UML
-
-
-
-# Section ___ : Debugging and Testing
-1. Valgrind
-2. Unit Testing
-
-
-
 # Section ___ : Builds and Integration
 ## Build Tools
 1. Make
@@ -156,6 +138,13 @@
 
 
 
+# Section ___ : UML
+
+
+
+# Section ___ : Debugging and Testing
+1. Valgrind
+2. Unit Testing
 
 
 

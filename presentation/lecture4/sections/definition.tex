@@ -1,0 +1,44 @@
+\documentclass[../lecture4-functions.tex]{subfiles}
+
+\begin{document}
+
+\section{Function Definition}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{}
+    In C++, a function is a group of statements that is given a name, and which can be called from some point of the program. The most common syntax to define a function is: \newline
+
+\begin{cppcode}
+returnValueType functionName(type parameter1, type parameter2, ...)
+{
+    statements;
+}
+\end{cppcode}
+
+    \vspace{0.5cm}
+    Where:
+    \begin{tabular}{rl}
+        \textbf{return-value-type} & Is the type of the value returned by the function. \\
+        \textbf{function-name}     & Is the identifier by which the function can be called. \\
+        \textbf{parameters}        & Each parameter consists of a type followed by an \\
+                                   & identifier,  with each parameter being separated from the \\
+                                   & next by a comma. \\
+        \textbf{statements}        & Is the function's body. It is a block of statements \\
+                                   & surrounded by braces \{ \} that specify what the \\
+                                   & function actually does. \\
+    \end{tabular}
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Cute Dog}
+    \begin{center}
+        \makebox[\textwidth]{\includegraphics[width=0.80\paperwidth,height=0.80\textheight]{graphics/cutedog1.jpg}}
+    \end{center}
+\end{frame}
+
+
+% -------------------------------------------------------------------
+
+\end{document}

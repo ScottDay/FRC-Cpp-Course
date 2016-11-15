@@ -1,0 +1,37 @@
+\documentclass[../lecture4-functions.tex]{subfiles}
+
+\begin{document}
+
+\section{Function Arguments}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Function Arguments}
+    The names of variables in the statement calling the function will not in general be the same as the names in the function definition, although they must be of the same type. \newline
+
+    We often distinguish between the \textbf{formal paremeters} in the function definition (e.g. \verb|number|) and the \textbf{actual parameters} for the values of the variables passed to the function (e.g. number in the example above) when it is called.
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{}
+    Function arguments (actual parameters) an include constants and mathematical expressions. For example the following statement assigns the value 24 to the variable result.
+
+    \begin{cppcode}[lastline = 1]
+result = factorial(4);
+    \end{cppcode}
+
+    The function arguments can also be functions that return a value, although this makes the code difficult to read and debug.
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Cute Dawg}
+    \begin{center}
+        \makebox[\textwidth]{\includegraphics[width=0.80\paperwidth,height=0.80\textheight]{graphics/cutedog3.jpg}}
+    \end{center}
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\end{document}
