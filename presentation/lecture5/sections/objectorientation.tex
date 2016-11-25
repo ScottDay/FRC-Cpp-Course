@@ -1,0 +1,47 @@
+\documentclass[../lecture5-objectorientation.tex]{subfiles}
+
+\begin{document}
+
+\section{Object Orientation}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Object Orientation}
+    \note{Prime purpose of C++ was to add object orientation to C, which is in itself one of the most powerful programming languages.}
+
+    Core of Object Oriented Programming (OOP) is to create objects, in code, that have certain properties and methods. \newline
+
+    While designing C++ modules, we try to see the whole world in the form of objects. \newline
+
+    For example, a car is an object which has certain properties such as color, number of doors, and the like. It also has ccertain methods such as accelerate, brake, and so on.
+\end{frame}
+
+% -------------------------------------------------------------------
+
+\begin{frame}[fragile]{Overview}
+    There are a few principle concepts that form the foundation of OOP:
+    \begin{description}
+        \item[Object] The basic unit of OOP. Both data and function that operate on data are bundled as a unit called an \textbf{Object}.
+        \item[Class] The blueprint for an object.
+        \item[Abstraction] refers to, providing only essential information to the outside world and hiding their background details.
+        \item[Encapsulation] is placing data and functions that work on that data in the same place.
+        \item[Inheritance] is the process off forming a new class from an existing class that is from the existing class called a base class. The new class formed is called the derived class.
+        \item[Polymorphism] is the ability to use a function in different ways.
+        \item[Overloading] is also a branch of polymorphism. It allows you to specify more than one definition for a \textbf{function name}.
+    \end{description}
+\end{frame}
+
+\note[itemize]
+{
+    \item \textbf{Class} This doesn't define any data, but it does define what the class name means, that is, what an object of the class will consist of and what operations can be performed on such an object. \newline
+    \item \textbf{Abstraction} I.e. to represent the needed information in program without presenting the details.
+    \item E.g. A database system hides certain details of how data is stored and created and maintained. C++ classes provides different methods to the outside world without giving internal detail about those methods and data.
+    \item \textbf{Inheritance} Most useful aspects of OOP is code reusability.
+    \item Very important concept of OOP since this feature helps reduce the code size. \newline
+    \item \textbf{Polymorphism} Poly refers to many.
+    \item A single function or an operator function in many ways different upon the usage is called polymorphism.
+}
+
+% -------------------------------------------------------------------
+
+\end{document}
