@@ -3,10 +3,8 @@
 %\documentclass[9pt]{beamer}             % only frames
 %\documentclass[handout, 9pt]{beamer}
 
-%pgfpagesuselayout{4 on 1}
-
 % Notes within frame content
-% \mode<handout>{\newline\textcolor{red}{notetext}}
+% \mode<handout>{\newline\textcolor{gray}{notetext}}
 
 \usetheme[progressbar=frametitle]{metropolis}
 
@@ -22,6 +20,12 @@
 \usepackage{tcolorbox}
 \usepackage{multicol}
 \usepackage{tabularx}
+\usepackage{pgfpages}
+
+%\pgfpagesuselayout{4 on 1}
+%\setbeameroption{show notes on second screen=right}
+\addtobeamertemplate{note page}{\setlength{\parskip}{8pt}}
+
 \tcbuselibrary{minted, skins, listings}
 
 \definecolor{cppcodebg}{rgb}{0.20,0.20,0.20} %0.85
