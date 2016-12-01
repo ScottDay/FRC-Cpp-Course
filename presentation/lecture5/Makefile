@@ -1,6 +1,6 @@
 # Latex Makefile for Windows
 
-filename = lecture2-objectorientation.tex
+filename = lecture5-objectorientation.tex
 
 compiler     = xelatex.exe
 compileropts = -synctex=1 -interaction=nonstopmode -shell-escape
@@ -16,4 +16,7 @@ compile: ${compiler} ${compileropts} ${filename}
 read: ${pdfviewer} "${filename}"
 
 clean: del ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg,synctex.gz,listing,nav,snm,toc,vrb}
-	del _minted-lecture1-introduction
+	del _minted-lecture5-objectorientation
+
+
+# http://tex.stackexchange.com/questions/2554/changing-latex-headers-via-a-makefile
