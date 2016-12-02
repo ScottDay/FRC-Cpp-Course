@@ -7,19 +7,102 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Inheritance}
-t
+    When creating a class, instead of writing completely new data members and member functions, the programmer can designate that the new class should inherit the members of an existing class. This existing class is called the \textbf{base} class, and the new class is referred to as the \textbf{derived} class. \newline \newline
+
+    The idea of inheritance implements the \textbf{is a} relationship. \newline
+
+    For example, mammal IS-A animal, dog IS-A mammal hence dog IS-A animal as well and so on.
+
+    \note[itemize]
+    {
+        Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse the code functionality and fast implementation time.
+    }
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Base \& Derived Classes}
-t
+    Blarg blarg blarg
+
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=30]
+#include <iostream>
+using namespace std;
+
+// Base class
+class Shape
+{
+    public:
+        void setWidth(int width)
+        {
+            this.width = width;
+        }
+
+        void setHeight(int height)
+        {
+            this.height = height;
+        }
+
+    protected:
+        int width, height;
+};
+
+// Derived class
+class Rectangle: public Shape
+{
+    public:
+        int getArea()
+        {
+            return width * height;
+        }
+};
+            \end{cppcode}
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=12]
+int main()
+{
+    Rectangle rect;
+
+    rect.setWidth(5);
+    rect.setHeight(7);
+
+    // Print the area of the object.
+    cout << "Total area: " << rect.getArea() << endl;
+
+    return 0;
+}
+            \end{cppcode}
+
+            Blarg blarg blarg the result is 35
+    \end{columns}
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Access Control and Inheritance}
-t
+    A derived class can access all the non-private members of its base class.
+
+    \begin{table}
+        \center
+        \begin{tabular}{c|c|c|c}
+            \toprule
+            \textbf{Access} & \textbf{Public} & \textbf{Protected} & \textbf{Private} \\
+            \midrule
+            Same class      & yes & yes & yes \\
+            Derived classes & yes & yes & no  \\
+            Outside classes & yes & no  & no  \\
+            \bottomrule
+        \end{tabular} \newline \newline \newline
+    \end{table}
+
+    A derived class inherits all base class methods with the following exceptions:
+
+    \begin{itemize}
+        \item Constructors, destructors and copy constructors of the base class.
+        \item Overloaded operators of the base class.
+        \item The friend functions of the base class.
+    \end{itemize}
 \end{frame}
 
 % -------------------------------------------------------------------
@@ -30,8 +113,75 @@ t
 
 % -------------------------------------------------------------------
 
-\begin{frame}[fragile]{Multiple Inheritances}
-t
+\begin{frame}[fragile]{Multiple Inheritance}
+    A C++ class can inherit members from more than one class.
+
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=31]
+#include <iostream>
+using namespace std;
+
+// Base class Shape
+class Shape
+{
+    public:
+        void setWidth(int width)
+        {
+            this.width = width;
+        }
+
+        void setHeight(int height)
+        {
+            this.height = height;
+        }
+
+    protected:
+        int width, height;
+};
+
+// Base class PaintCost
+class PaintCost
+{
+    public:
+        int getCost(int area)
+        {
+            return area * 70;
+        }
+};
+            \end{cppcode}
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=28]
+// Derived class
+class Rectangle: public Shape, public PaintCost
+{
+    public:
+        int getArea()
+        {
+            return width * height;
+        }
+};
+
+int main()
+{
+    Rectangle rect;
+    int area;
+
+    rect.setWidth(5);
+    rect.setHeight(7);
+
+    area = rect.getArea();
+
+    // Print the area of the object.
+    cout << "Total area: " << rect.getArea() << endl;
+
+    // Print the total cost of painting
+    cout << "Total paint cost: $" << rect.getCost(area) << endl;
+
+    return 0;
+}
+            \end{cppcode}
+    \end{columns}
 \end{frame}
 
 % -------------------------------------------------------------------
