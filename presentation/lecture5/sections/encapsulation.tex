@@ -7,19 +7,42 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Data Encapsulation in C++}
-t
+    Encapsulation is an Object Oriented Programming concept that binds together the data and functions that manipulate the data, and that keeps both safe from outside interference and misuse. Data encapsulation led to the important OOP concept of \textbf{data hiding}.
+
+    \textbf{Data encapsulation} is a mechanism of bundling the data, and the functions that use them and \textbf{data abstraction} is a mechanism of exposing only the interfaces and hiding the implementation details from the user.
+
+    \note
+    {
+        C++ does this through the creation of user-defined types, called \textbf{classes}.
+    }
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Data Encapsulation Example}
-t
+    \begin{cppcode}[lastline=13]
+class Box
+{
+    public:
+        double getVolume()
+        {
+            return length * breadth * height;
+        }
+
+    private:
+        double length;  // Length of a box
+        double breadth; // Breadth of a box
+        double height;  // Height of a box
+};
+    \end{cppcode}
+
+    Making one class a friend of another exposes the implementation details and reduces encapsulation. The ideal is to keep as many of the details of each class hidden from all other classes as possible.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Designing Strategy}
-t
+    Blarg blarg blarg
 \end{frame}
 
 % -------------------------------------------------------------------
