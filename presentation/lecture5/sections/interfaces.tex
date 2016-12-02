@@ -7,19 +7,106 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Interfaces in C++ (Abstract Classes)}
-t
+    An interface describes the behavior or capabilities of a C++ class without committing to a particular implementation of that class. \newline
+
+    The C++ interfaces are implemented using abstract classes. A class is made abstract by declaring at least one of its functions as pure virtual function. A pure virtual function is specified by placing "= 0" in its declaration as follows: \newline
+
+    \begin{cppcode}[lastline=11]
+class Box
+{
+    public:
+        // Pure virtual function
+        virtual double getVolume() = 0;
+
+    private:
+        double length;  // Length of a box
+        double breadth; // Breadth of a box
+        double height;  // Height of a box
+};
+    \end{cppcode}
+
+    The purpose of an abstract class is to provide an appropriate base class from which other classes can inherit. Abstract classes cannot be used to instantiate objects and serves only as an interface. Attempting to instantiate an object of an abstract class causes a compilation error.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Abstract Class Example}
-t
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=34]
+#include <iostream>
+using namespace std;
+
+// Base class
+class Shape
+{
+    public:
+        // Pure virtual function providing interface framework.
+        virtual int getArea() = 0;
+
+        void setWidth(int width)
+        {
+            this.width = width;
+        }
+
+        void setHeight(int h)
+        {
+            this.height = height;
+        }
+
+    protected:
+        int width;
+        int height;
+};
+
+// Derived classes
+class Rectangle: public Shape
+{
+    public:
+        int getArea()
+        {
+            return width * height;
+        }
+};
+            \end{cppcode}
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=28]
+class Triangle: public Shape
+{
+    public:
+        int getArea()
+        {
+            return (width * height) / 2;
+        }
+};
+
+int main(void)
+{
+    Rectangle rect;
+    Triangle  tri;
+
+    rect.setWidth(5);
+    rect.setHeight(7);
+
+    // Print the area of the object.
+    cout << "Total rectangle area: " << rect.getArea() << endl;
+
+    tri.setWidth(5);
+    tri.setHeight(7);
+
+    // Print the area of the object.
+    cout << "Total triangle area: " << tri.getArea() << endl;
+
+    return 0;
+}
+            \end{cppcode}
+    \end{columns}
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Designing Strategy}
-t
+    Blarg blarg blarg
 \end{frame}
 
 % -------------------------------------------------------------------
