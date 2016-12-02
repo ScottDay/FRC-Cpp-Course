@@ -4,6 +4,37 @@
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{pgf-umlcd}
 \usepackage{mdframed}
+\usepackage[cache=false]{minted}
+\usepackage{tcolorbox}
+
+\tcbuselibrary{minted, skins, listings}
+
+\definecolor{cppcodebg}{rgb}{0.20,0.20,0.20} %0.85
+
+\setmintedinline[cpp]{style=scott, bgcolor=black!70, fontsize=\footnotesize}
+
+\newtcblisting{cppcode}[1][]{
+    listing engine=minted,
+    colback=cppcodebg,
+    colframe=black!70,
+    listing only,
+    size=tight,
+    minted style=scott,
+    minted language=cpp,
+    minted options={
+        breaklines=true,
+        fontsize=\tiny,
+        tabsize=2,
+        linenos=true,
+        numbersep=2mm,
+        texcl=true,
+        #1
+    },
+    left=5mm,
+    enhanced,
+    overlay={\begin{tcbclipinterior}\fill[black!25] (frame.south west)
+            rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
+}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
@@ -25,7 +56,7 @@
 
 \begin{document}
 
-\title{Weekly Excersize 5}
+\title{Weekly Excersize 5 - Object Orientation}
 \author{Scott Day\\
 Curtin FRC: Pre-season Training}
 
@@ -39,28 +70,172 @@ The objectives of this weeksheet are:
 \begin{itemize}
     \item Implement the basic object orientation concepts.
     \item Understand how a class is dependant on its class fields.
+    \item Smash all the things.
 \end{itemize}
 \end{flushleft}
 
-
+% -------------------------------------------------------------------
 
 \begin{problem}{1}
 \text{ }\\
-Find all Solutions to the equation $x^{2} \oplus x = [0] $ in $\Z_{4}$
+Write a class having two private variables and one member function which will return the area of the rectangle
 \end{problem}
 
 \begin{proof}
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
 
+class CRectangle
+{
+    public:
+        int x, y;
+
+        int area()
+        {
+            return x * y;
+        }
+};
+
+int main ()
+{
+    CRectangle rect;
+    cout << "Enter length of rectangle: ";
+    cin >> rect.x;
+    cout << "Enter breadth of rectangle: ";
+    cin >> rect.y;
+    cout << "Area: " << rect.area();
+
+    return 0;
+}
+\end{cppcode}
 \end{proof}
+\pagebreak
+
+% --------------------
 
 \begin{problem}{2}
 \text{ }\\
-$(1)$ Prove: If $[a] \in \Z_{n}$ is a unit, then $[a]$ is not a zero divisor.\\
-$(2)$ Prove: If $[b] \in \Z_{n}$ is a zero divisor, then $[b]$ is not a unit.
+Write a program that inputs two integers in main and passes them to the default constructor of a class. Show the result of the addition of two numbers.
 \end{problem}
 
 \begin{proof}
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
 
+class Data
+{
+    public:
+        int num1, num2;
+
+        Data(int num1, int num2)
+        {
+            this.num1 = num1;
+            this.num2 = num2;
+            cout << "numbers initialized" << endl;
+        }
+
+        int sum()
+        {
+            return num1 + num2;
+        }
+};
+
+int main ()
+{
+    int num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    Data data(num1, num2);
+
+    cout << "The addition result on: " << data.sum() << endl;
+
+    return 0;
+}
+\end{cppcode}
 \end{proof}
+
+% --------------------
+
+\begin{problem}{3}
+\text{ }\\
+Write a C++ class called 'Student' with the data members:
+\begin{itemize}
+    \item name (char type)
+    \item marks1, marks2 (integer type)
+\end{itemize}
+
+\text{ }\\
+The program asks the user to enter name and marks. Then calcMedia() calculates the media note and disp() display name and total media mark on screen in different lines.
+\end{problem}
+
+\begin{proof}
+\begin{cppcode}[]
+#include <iostream>
+using namespace std;
+
+class Student
+{
+    public:
+        char* name;
+        int mark1, mark2;
+
+        Student(char* name, int mark1,int mark2)
+        {
+            this.name = name;
+            this.mark1 = mark1;
+            this.mark2 = mark2;
+        }
+
+        int calcMedia()
+        {
+            return (mark1 + mark2) / 2;
+        }
+
+        void display()
+        {
+            cout << "Student: " << name << endl;
+            cout << "Media: " << calcMedia() << endl;
+        }
+};
+
+int main()
+{
+    char* name;
+    int mark1, mark2;
+
+    cout << "Enter name: ";
+    cin >> name;
+    cout << "Enter marks of two subjects: ";
+    cin >> mark1;
+    cin >> mark2;
+    Student student1(name, mark1, mark2);
+    student1.display();
+
+    return 0;
+}
+\end{cppcode}
+\end{proof}
+
+% --------------------
+
+\begin{problem}{4}
+\text{ }\\
+
+\end{problem}
+
+\begin{proof}
+\begin{cppcode}[]
+
+\end{cppcode}
+\end{proof}
+
+% --------------------
 
 \end{document}
