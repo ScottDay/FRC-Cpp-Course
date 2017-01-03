@@ -7,25 +7,61 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{C++ Overloading (Operator and Function)}
-t
+    An overloaded declaration is a declaration that had been declared with the same name as a previously declared declaration in the same scope, except that both declarations have different arguments and obviously different definition (implementation).
+
+    \note
+    {
+        When you call an overloaded function or operator, the compiler determines the most appropriate definition to use by comparing the argument types you used to call the function or operator with the parameter types specified in the definitions. The process of selecting the most appropriate overloaded function or operator is called overload resolution.
+    }
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Function Overloading in C++}
-t
-\end{frame}
+    \begin{columns}[T,onlytextwidth]
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=21]
+#include <iostream>
+using namespace std;
 
-% -------------------------------------------------------------------
+class PrintData
+{
+    public:
+        void print(int i)
+        {
+            cout << "Printing int: " << i << endl;
+        }
 
-\begin{frame}[fragile]{Operators Overloading in C++}
-t
-\end{frame}
+        void print(double  f)
+        {
+            cout << "Printing float: " << f << endl;
+        }
 
-% -------------------------------------------------------------------
+        void print(char* c)
+        {
+            cout << "Printing character: " << c << endl;
+        }
+};
+            \end{cppcode}
+        \column{.5\textwidth}
+            \begin{cppcode}[lastline=15]
+int main()
+{
+    PrintData printdata;
 
-\begin{frame}[fragile]{Operator Overloading Examples}
-t
+    // Call print to print integer
+    printdata.print(5);
+
+    // Call print to print float
+    printdata.print(500.263);
+
+    // Call print to print character
+    printdata.print("Hello C++");
+
+    return 0;
+}
+            \end{cppcode}
+    \end{columns}
 \end{frame}
 
 % -------------------------------------------------------------------

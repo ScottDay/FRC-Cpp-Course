@@ -7,31 +7,54 @@
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Data Abstraction in C++}
-t
+    Data abstraction refers to, providing only essential information to the outside world and hiding their background details, i.e., to represent the needed information in program without presenting the details. \newline
+
+    In C++, we use classes to define our own abstract data types (ADT). You can use the cout object of class ostream to stream data to standard output like this: \newline
+
+    \begin{cppcode}[lastline=8]
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello C++" << endl;
+    return 0;
+}
+    \end{cppcode}
+
+    \note
+    {
+        Here, you don't need to understand how cout displays the text on the user's screen. You need to only know the public interface and the underlying implementation of cout is free to change. endl does the same on different operating systems.
+    }
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Access Labels Enforce Abstraction}
-t
+    Blarg blarg blarg
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Benefits of Data Abstraction}
-t
+    Data abstraction provides two important advantages:
+
+    \begin{itemize}
+        \item Class internals are protected from inadvertent user-level errors, which might corrupt the state of the object.
+        \item The class implementation may evolve over time in response to changing requirements or bug reports without requiring change in user-level code.
+    \end{itemize}
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Data Abstraction Example}
-t
+    Any C++ program where you implement a class with public and private members is an example of data abstraction.
 \end{frame}
 
 % -------------------------------------------------------------------
 
 \begin{frame}[fragile]{Designing Strategy}
-t
+    Blarg blarg blarg
 \end{frame}
 
 % -------------------------------------------------------------------
